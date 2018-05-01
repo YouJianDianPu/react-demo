@@ -1,0 +1,14 @@
+'use strict';
+
+import React        from 'react';
+import ReactDom     from 'react-dom';
+
+const Home = React.createClass({
+	render(){
+		return (
+			<div>Welcome</div>
+		);
+	}
+});
+
+export default Home;
