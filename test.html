@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// var url = "http://www.xiyanghui.com/product/list?id=123456&sort=discount#title";
+
+	// function parseUrl(url){
+	// 	var protocol = url.split(':')[0];
+	// 	console.log('protocol', protocol);
+
+	// 	var host = url.split(':')[1].split('/')[2];
+	// 	console.log('host', host);
+
+	// 	var pathArr = [];
+	// 	var p = url.split('//')[1].split('?')[0].split('/');
+	// 	for(var i = 0, il = p.length; i < il; i++){
+	// 		if(p[i] != host){
+	// 			pathArr.push(p[i]);
+	// 		}
+	// 	}
+	// 	var path = '/' + pathArr.join('/');
+	// 	console.log('path', path);
+
+	// 	var query = {};
+	// 	var q = url.split('//')[1].split('?')[1].split('#')[0].split('&');
+	// 	for(var j = 0, jl = q.length; j < jl; j++){
+	// 		var qq = q[j].split('=');
+	// 		query[qq[0]] = qq[1];	
+	// 	}	
+	// 	console.log('query', query);
+
+	// 	var hash = url.split('//')[1].split('?')[1].split('#')[1];
+	// 	console.log('hash', hash);
+	// }
+	// parseUrl(url);
+	
+
+	function trafficlight (){
+		
+
+			var g = setInterval(function(){
+				console.log('绿灯');
+				var r = setInterval(function(){
+					console.log('红灯');
+					var y = setInterval(function(){
+						console.log('黄灯');
+					}, 2000);
+					clearInterval(y); 
+				}, 5000);
+				clearInterval(r);
+			}, 10000);
+			clearInterval(g);
+		
+	}
+	
+	trafficlight();	
+		
+	
+	
+
+</script>
+</body>
+</html>
